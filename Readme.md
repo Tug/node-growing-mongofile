@@ -1,6 +1,6 @@
 # node-growing-mongofile
 
-A hack of [node-growing-mongofile][1] by Felix Geisendörfer to stream file from mongodb instead of the local filesystem
+A hack of [node-growing-file][1] by Felix Geisendörfer to stream file from mongodb instead of the local filesystem
 
 ## Installation
 
