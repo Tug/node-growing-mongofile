@@ -8,7 +8,7 @@ A hack of [node-growing-file][1] by Felix Geisendörfer to stream file from mong
 
 ## Usage
 
-    var file = GrowingFile.open('my-growing-file.dat');
+    var file = GrowingFile.open(db, 'my-growing-file.dat' [, options [, callback]]);
     file.pipe(<some writeable stream>);
 
 The file being read must exist in mongodb. Thus, when saving it, you must close it and re-open it.
