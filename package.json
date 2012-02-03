@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "oop": "0.0.3",
-    "mongodb": ">= 0.9.8"
   },
   "devDependencies": {}
 }
