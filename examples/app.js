@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 
 app.get('/:filename', function(req, res, next) {
   var filename = req.params.filename;
-  GrowingFile.open(db, filename, null, function(err, gf) {
+  GrowingFile.open(mongodb, db, filename, null, function(err, gf) {
     if(err) {
       next(err);
       return;
@@ -41,7 +41,7 @@ app.post('/', upload_middleware, function(req, res, next){
   var filesize = req.form.fileInfo.filesize;
   console.log("http://localhost:"+PORT+"/"+fileinfo.filename);
 
-  var gs = new GrowingFile.createGridStore(db, fileinfo.filename, {"filesize": filesize}, function(err, gs) {
+  var gs = new GrowingFile.createGridStore(mongodb, db, fileinfo.filename, {"filesize": filesize}, function(err, gs) {
     req.form.read();
   });
   

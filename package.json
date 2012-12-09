@@ -1,7 +1,7 @@
 {
   "name": "growing-mongofile",
   "description": "A readable file stream for files that are growing.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "homepage": "https://github.com/Tug/node-growing-mongofile",
   "repository": {
     "type": "git",
@@ -16,8 +16,7 @@
     "node": "*"
   },
   "dependencies": {
-    "oop": "0.0.3",
-    "mongodb": "1.1.11"
+    "oop": "0.0.3"
   },
   "devDependencies": {}
 }
